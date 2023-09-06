@@ -1,5 +1,6 @@
 import React from "react";
 import MainGolfLogo from "./Icons/MainGolfLogo";
+import Link from "next/link";
 
 const FantasyPGALanding: React.FC = () => {
   return (
@@ -16,12 +17,13 @@ const FantasyPGALanding: React.FC = () => {
           <p className="text-lg mb-4">
             Create your dream PGA team and compete with friends!
           </p>
-          <button
-            onClick={() => alert("login")}
-            className="bg-emerald-50 hover:bg-slate-50 text-gray-900 py-2 px-4 rounded-full font-semibold transition duration-300 ease-in-out shadow-md"
-          >
-            Get Started
-          </button>
+          <div className="flex w-full justify-center items">
+            <Link href="/login">
+              <div className="bg-emerald-50 hover:bg-slate-50 text-gray-900 py-2 px-4 rounded-full font-semibold transition duration-300 ease-in-out shadow-md w-fit">
+                Get Started
+              </div>
+            </Link>
+          </div>
         </header>
         {/* Main Content */}
         <main className="container mx-auto px-4 py-8 text-center">
@@ -55,11 +57,33 @@ const FantasyPGALanding: React.FC = () => {
               {/* Featured League 2 */}
               <div className="bg-white p-6 rounded-lg shadow-lg hover:bg-violet-50 transition duration-300 ease-in-out">
                 <h3 className="text-xl font-semibold mb-2 text-slate-800">
-                  Rookie's Challenge
+                  Mock Draft
                 </h3>
                 <p className="text-lg text-slate-800">
-                  New to Fantasy Golf? Try the Rookie's Challenge and learn the
-                  ropes while having fun.
+                  New to Fantasy Golf? Try a Mock Draft and learn the ropes
+                  while having fun.
+                </p>
+              </div>
+            </div>
+            <div>
+              {/* Featured League 2 */}
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:bg-violet-50 transition duration-300 ease-in-out">
+                <h3 className="text-xl font-semibold mb-2 text-slate-800">
+                  Upcoming Tournaments
+                </h3>
+                <p className="text-lg text-slate-800">
+                  Insight to Players projections in upcoming events
+                </p>
+              </div>
+            </div>
+            <div>
+              {/* Featured League 2 */}
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:bg-violet-50 transition duration-300 ease-in-out">
+                <h3 className="text-xl font-semibold mb-2 text-slate-800">
+                  World Rankings
+                </h3>
+                <p className="text-lg text-slate-800">
+                  PGA World Rankings and Money Leaders
                 </p>
               </div>
             </div>
