@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "next/link";
-import MainGolfLogo from "../../components/Icons/MainGolfLogo";
+import React from "react"
+import Link from "next/link"
+import MainGolfLogo from "../../components/Icons/MainGolfLogo"
 
 export default function Login() {
   return (
@@ -9,7 +9,7 @@ export default function Login() {
         {/* Header */}
         <header className="bg-emerald-300 p-4">
           {/* Use Link component to navigate back to PGA page */}
-          <Link href="/landing">
+          <Link href="/">
             <div className="flex w-full justify-center items-center cursor-pointer">
               <MainGolfLogo />
             </div>
@@ -107,5 +107,5 @@ export default function Login() {
         </footer>
       </div>
     </div>
-  );
+  )
 }
