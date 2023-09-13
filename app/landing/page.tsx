@@ -2,8 +2,6 @@ import Link from "next/link";
 
 // import hygraph from "./hygraph";
 
-import "/styles/globals.css";
-
 // import { gql } from "graphql-request";
 import MainGolfLogo from "../../components/Icons/MainGolfLogo";
 

@@ -1,7 +1,7 @@
-import { User } from '../interfaces';
+
 
 /** Sample data with real professional golfers. */
-export const sampleUserData: User[] = [
+export const sampleUserData = [
   { id: 1, name: 'Tiger Woods' },
   { id: 2, name: 'Rory McIlroy' },
   { id: 3, name: 'Dustin Johnson' },
