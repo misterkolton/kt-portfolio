@@ -1,8 +1,9 @@
 import React from "react";
-import MainGolfLogo from "./Icons/MainGolfLogo";
+import "/styles/globals.css";
 import Link from "next/link";
+import MainGolfLogo from "../../components/Icons/MainGolfLogo";
 
-const LoginScreen: React.FC = () => {
+export default function Login() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-900 text-white font-sans">
       <div className="w-full max-w-screen-md text-center">
@@ -55,10 +56,7 @@ const LoginScreen: React.FC = () => {
                   placeholder="Your password"
                 />
               </div>
-              <button
-                onClick={() => alert("Logged in")}
-                className="bg-emerald-50 hover:bg-slate-50 text-gray-900 py-2 px-4 rounded-full font-semibold transition duration-300 ease-in-out shadow-md"
-              >
+              <button className="bg-emerald-50 hover:bg-slate-50 text-gray-900 py-2 px-4 rounded-full font-semibold transition duration-300 ease-in-out shadow-md">
                 Login
               </button>
             </div>
@@ -96,10 +94,7 @@ const LoginScreen: React.FC = () => {
                   placeholder="Your password"
                 />
               </div>
-              <button
-                onClick={() => alert("Signed up")}
-                className="bg-emerald-50 hover:bg-slate-50 text-gray-900 py-2 px-4 rounded-full font-semibold transition duration-300 ease-in-out shadow-md"
-              >
+              <button className="bg-emerald-50 hover:bg-slate-50 text-gray-900 py-2 px-4 rounded-full font-semibold transition duration-300 ease-in-out shadow-md">
                 Sign Up
               </button>
             </div>
@@ -108,15 +103,10 @@ const LoginScreen: React.FC = () => {
         {/* Footer */}
         <footer className="bg-gray-800 p-4 w-full">
           <div className="container mx-auto text-center">
-            <p className="text-gray-300 text-sm">
-              &copy; {new Date().getFullYear()} Fantasy Golf, Inc. All rights
-              reserved.
-            </p>
+            <p className="text-gray-300 text-sm">Contact</p>
           </div>
         </footer>
       </div>
     </div>
   );
-};
-
-export default LoginScreen;
+}

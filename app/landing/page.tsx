@@ -1,8 +1,13 @@
-import React from "react";
-import MainGolfLogo from "./Icons/MainGolfLogo";
 import Link from "next/link";
 
-const FantasyPGALanding: React.FC = () => {
+// import hygraph from "./hygraph";
+
+import "/styles/globals.css";
+
+// import { gql } from "graphql-request";
+import MainGolfLogo from "../../components/Icons/MainGolfLogo";
+
+export default function Landing() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-900 text-white font-sans">
       <div className="w-full max-w-screen-lg text-center">
@@ -92,15 +97,10 @@ const FantasyPGALanding: React.FC = () => {
         {/* Footer */}
         <footer className="bg-gray-800 p-4 w-full">
           <div className="container mx-auto text-center">
-            <p className="text-gray-300 text-sm">
-              &copy; {new Date().getFullYear()} Fantasy Golf, Inc. All rights
-              reserved.
-            </p>
+            <p className="text-gray-300 text-sm">Contact</p>
           </div>
         </footer>
       </div>
     </div>
   );
-};
-
-export default FantasyPGALanding;
+}
