@@ -1,9 +1,5 @@
-import Link from "next/link";
-
-// import hygraph from "./hygraph";
-
-// import { gql } from "graphql-request";
-import MainGolfLogo from "../../components/Icons/MainGolfLogo";
+import Link from "next/link"
+import MainGolfLogo from "../../components/Icons/MainGolfLogo"
 
 export default function Landing() {
   return (
@@ -100,5 +96,5 @@ export default function Landing() {
         </footer>
       </div>
     </div>
-  );
+  )
 }
