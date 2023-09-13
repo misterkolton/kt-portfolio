@@ -10,7 +10,7 @@ export default function Login() {
         {/* Header */}
         <header className="bg-emerald-300 p-4">
           {/* Use Link component to navigate back to PGA page */}
-          <Link href="/pga">
+          <Link href="/landing">
             <div className="flex w-full justify-center items-center cursor-pointer">
               <MainGolfLogo />
             </div>
