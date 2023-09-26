@@ -11,7 +11,9 @@ export default function Login() {
           {/* Use Link component to navigate back to PGA page */}
           <Link href="/">
             <div className="flex w-full justify-center items-center cursor-pointer">
-              <MainGolfLogo />
+              <div className=" bg-white rounded-3xl mb-2 transition duration-300 ease-in-out shadow-md hover:bg-slate-100">
+                <MainGolfLogo />
+              </div>
             </div>
           </Link>
           <h1 className="text-4xl font-extrabold mb-2">
@@ -20,7 +22,7 @@ export default function Login() {
           <p className="text-lg mb-4">Enter your credentials to get started.</p>
         </header>
         {/* Main Content */}
-        <main className="container mx-auto px-4 py-8 text-center">
+        <main className="container mx-auto py-8 text-center">
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">
               Enter Your Email Address
